@@ -10,7 +10,7 @@
 
 @implementation Gameplay {
 
-    CCPhysicsNode *_physicsNode;
+        CCPhysicsNode *_physicsNode;
     CCNode *_catapultArm;
 
 }
