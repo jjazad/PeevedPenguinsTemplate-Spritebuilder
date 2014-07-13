@@ -195,8 +195,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>95</real>
-							<real>42.499969482421875</real>
+							<real>83</real>
+							<real>34.499969482421875</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -718,8 +718,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>59</real>
-							<real>37</real>
+							<real>149</real>
+							<real>35</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -743,11 +743,19 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>1</real>
-							<real>1</real>
+							<real>2.906191349029541</real>
+							<real>1.0418163537979126</real>
 							<false/>
 							<integer>0</integer>
 						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>rotation</string>
+						<key>type</key>
+						<string>Degrees</string>
+						<key>value</key>
+						<real>-88.658981323242188</real>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -896,8 +904,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>61</real>
-							<real>59</real>
+							<real>47</real>
+							<real>36</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -952,6 +960,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -1014,8 +1024,6 @@
 						<string>Seal.ccb</string>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
