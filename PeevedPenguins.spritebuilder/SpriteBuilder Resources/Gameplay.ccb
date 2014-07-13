@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>27</integer>
+	<integer>28</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -64,6 +64,22 @@
 				</dict>
 				<dict>
 					<key>name</key>
+					<string>bodyA</string>
+					<key>type</key>
+					<string>NodeReference</string>
+					<key>value</key>
+					<integer>5</integer>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>bodyB</string>
+					<key>type</key>
+					<string>NodeReference</string>
+					<key>value</key>
+					<integer>4</integer>
+				</dict>
+				<dict>
+					<key>name</key>
 					<string>collideBodies</string>
 					<key>type</key>
 					<string>Check</string>
@@ -77,8 +93,8 @@
 					<string>Point</string>
 					<key>value</key>
 					<array>
-						<real>0.0</real>
-						<real>0.0</real>
+						<real>138.38395690917969</real>
+						<real>6.0297904014587402</real>
 					</array>
 				</dict>
 				<dict>
@@ -123,6 +139,8 @@
 					</array>
 				</dict>
 			</array>
+			<key>selected</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>UUID</key>
@@ -148,8 +166,8 @@
 					<string>Position</string>
 					<key>value</key>
 					<array>
-						<real>224.50521850585938</real>
-						<real>269.2578125</real>
+						<real>233.38542175292969</real>
+						<real>299.37823486328125</real>
 						<integer>0</integer>
 						<integer>0</integer>
 						<integer>0</integer>
@@ -162,6 +180,14 @@
 					<string>NodeReference</string>
 					<key>value</key>
 					<integer>18</integer>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>bodyB</string>
+					<key>type</key>
+					<string>NodeReference</string>
+					<key>value</key>
+					<integer>5</integer>
 				</dict>
 				<dict>
 					<key>name</key>
@@ -178,8 +204,8 @@
 					<string>Point</string>
 					<key>value</key>
 					<array>
-						<real>42.33856201171875</real>
-						<real>-30.742212295532227</real>
+						<real>51.218769073486328</real>
+						<real>-0.6217808723449707</real>
 					</array>
 				</dict>
 				<dict>
@@ -189,8 +215,8 @@
 					<string>Point</string>
 					<key>value</key>
 					<array>
-						<real>181.20053100585938</real>
-						<real>123.96664428710938</real>
+						<real>190.85978698730469</real>
+						<real>121.37845611572266</real>
 					</array>
 				</dict>
 				<dict>
@@ -222,7 +248,135 @@
 					<string>EnabledFloat</string>
 					<key>value</key>
 					<array>
-						<real>58</real>
+						<real>68.563934326171875</real>
+						<false/>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>damping</string>
+					<key>type</key>
+					<string>Float</string>
+					<key>value</key>
+					<real>1</real>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>stiffness</string>
+					<key>type</key>
+					<string>Float</string>
+					<key>value</key>
+					<real>4</real>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<integer>27</integer>
+			<key>baseClass</key>
+			<string>CCPhysicsSpringJoint</string>
+			<key>children</key>
+			<array/>
+			<key>customClass</key>
+			<string></string>
+			<key>displayName</key>
+			<string>CCPhysicsSpringJoint</string>
+			<key>memberVarAssignmentName</key>
+			<string></string>
+			<key>memberVarAssignmentType</key>
+			<integer>1</integer>
+			<key>properties</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>position</string>
+					<key>type</key>
+					<string>Position</string>
+					<key>value</key>
+					<array>
+						<real>168.16732788085938</real>
+						<real>238.68814086914062</real>
+						<integer>0</integer>
+						<integer>0</integer>
+						<integer>0</integer>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>bodyA</string>
+					<key>type</key>
+					<string>NodeReference</string>
+					<key>value</key>
+					<integer>26</integer>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>bodyB</string>
+					<key>type</key>
+					<string>NodeReference</string>
+					<key>value</key>
+					<integer>5</integer>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>collideBodies</string>
+					<key>type</key>
+					<string>Check</string>
+					<key>value</key>
+					<false/>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>anchorA</string>
+					<key>type</key>
+					<string>Point</string>
+					<key>value</key>
+					<array>
+						<real>118.16731262207031</real>
+						<real>-16.311836242675781</real>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>anchorB</string>
+					<key>type</key>
+					<string>Point</string>
+					<key>value</key>
+					<array>
+						<real>175.09230041503906</real>
+						<real>133.367919921875</real>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>breakingForce</string>
+					<key>type</key>
+					<string>FloatCheck</string>
+					<key>value</key>
+					<array>
+						<real>100</real>
+						<false/>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>maxForce</string>
+					<key>type</key>
+					<string>FloatCheck</string>
+					<key>value</key>
+					<array>
+						<real>100</real>
+						<false/>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>restLength</string>
+					<key>type</key>
+					<string>EnabledFloat</string>
+					<key>value</key>
+					<array>
+						<real>48.500648498535156</real>
 						<false/>
 					</array>
 				</dict>
@@ -1291,8 +1445,6 @@
 										</array>
 									</dict>
 								</array>
-								<key>selected</key>
-								<true/>
 							</dict>
 						</array>
 						<key>customClass</key>
