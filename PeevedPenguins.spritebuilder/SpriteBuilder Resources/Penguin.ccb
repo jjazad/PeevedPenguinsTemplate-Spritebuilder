@@ -46,7 +46,7 @@
 		<key>memberVarAssignmentName</key>
 		<string></string>
 		<key>memberVarAssignmentType</key>
-		<integer>1</integer>
+		<integer>2</integer>
 		<key>physicsBody</key>
 		<dict>
 			<key>affectedByGravity</key>
@@ -62,7 +62,7 @@
 			<key>collisionType</key>
 			<string></string>
 			<key>cornerRadius</key>
-			<real>16.96875</real>
+			<real>16</real>
 			<key>density</key>
 			<real>1</real>
 			<key>dynamic</key>
@@ -74,8 +74,8 @@
 			<key>points</key>
 			<array>
 				<array>
-					<real>13.82421875</real>
-					<real>9.5625</real>
+					<real>0.0</real>
+					<real>0.0</real>
 				</array>
 			</array>
 			<key>polygons</key>
