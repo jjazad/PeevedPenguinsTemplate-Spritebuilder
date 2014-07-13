@@ -33,6 +33,8 @@
     // called on every touch in this scene
 - (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
     [self launchPenguin];
+
+    _physicsNode.debugDraw = TRUE;
 }
 
 
