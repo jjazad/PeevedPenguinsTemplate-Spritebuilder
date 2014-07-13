@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>14</integer>
+	<integer>17</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -33,7 +33,7 @@
 	<array>
 		<dict>
 			<key>UUID</key>
-			<integer>13</integer>
+			<integer>16</integer>
 			<key>baseClass</key>
 			<string>CCPhysicsPivotJoint</string>
 			<key>children</key>
@@ -55,8 +55,8 @@
 					<string>Position</string>
 					<key>value</key>
 					<array>
-						<real>229.16667175292969</real>
-						<real>107.5</real>
+						<real>215.83334350585938</real>
+						<real>105.83333587646484</real>
 						<integer>0</integer>
 						<integer>0</integer>
 						<integer>0</integer>
@@ -93,8 +93,8 @@
 					<string>Point</string>
 					<key>value</key>
 					<array>
-						<real>153.30421447753906</real>
-						<real>3.7573866844177246</real>
+						<real>139.99383544921875</real>
+						<real>5.5984306335449219</real>
 					</array>
 				</dict>
 				<dict>
@@ -454,7 +454,7 @@
 										<key>type</key>
 										<string>StringSimple</string>
 										<key>value</key>
-										<string></string>
+										<string>CatapultArm</string>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -463,8 +463,8 @@
 										<string>Position</string>
 										<key>value</key>
 										<array>
-											<real>241.66665649414062</real>
-											<real>191.33332824707031</real>
+											<real>228.33332824707031</real>
+											<real>198</real>
 											<integer>0</integer>
 											<integer>0</integer>
 											<integer>0</integer>
@@ -624,7 +624,7 @@
 										<key>type</key>
 										<string>StringSimple</string>
 										<key>value</key>
-										<string></string>
+										<string>Catapult</string>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -633,8 +633,8 @@
 										<string>Position</string>
 										<key>value</key>
 										<array>
-											<real>253.66667175292969</real>
-											<real>90.166664123535156</real>
+											<real>240.33335876464844</real>
+											<real>87.666664123535156</real>
 											<integer>0</integer>
 											<integer>0</integer>
 											<integer>0</integer>
