@@ -1082,7 +1082,7 @@
 								<key>customClass</key>
 								<string></string>
 								<key>displayName</key>
-								<string>PullBackNode</string>
+								<string>CCNodePullBack</string>
 								<key>memberVarAssignmentName</key>
 								<string>_pullBack</string>
 								<key>memberVarAssignmentType</key>
@@ -1102,7 +1102,7 @@
 									<key>collisionType</key>
 									<string></string>
 									<key>cornerRadius</key>
-									<real>4</real>
+									<real>0.0</real>
 									<key>density</key>
 									<real>1</real>
 									<key>dynamic</key>
@@ -1216,7 +1216,7 @@
 									<key>collisionType</key>
 									<string></string>
 									<key>cornerRadius</key>
-									<real>4</real>
+									<real>0.0</real>
 									<key>density</key>
 									<real>1</real>
 									<key>dynamic</key>
