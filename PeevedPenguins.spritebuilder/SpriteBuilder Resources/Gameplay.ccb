@@ -138,7 +138,7 @@
 					<key>value</key>
 					<array>
 						<real>45.582973480224609</real>
-						<false/>
+						<true/>
 					</array>
 				</dict>
 				<dict>
@@ -266,14 +266,6 @@
 				<dict>
 					<key>name</key>
 					<string>limitEnabled</string>
-					<key>type</key>
-					<string>Check</string>
-					<key>value</key>
-					<true/>
-				</dict>
-				<dict>
-					<key>name</key>
-					<string>motorEnabled</string>
 					<key>type</key>
 					<string>Check</string>
 					<key>value</key>
