@@ -41,19 +41,17 @@ _physicsNode.debugDraw = TRUE;
     // called on every touch in this scene
 - (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
 
-
-    CGPoint touchLocatin = [touch locationInNode:_contentNode];
+    CGPoint touchLocation = [touch locationInNode:_contentNode];
 
         // start catapult dragging when a touch inside of the catapult arm occurs
-    if (CGRectContainsPoint([_catapultArm boundingBox], touchLocatin))
+    if (CGRectContainsPoint([_catapultArm boundingBox], touchLocation))
     {
             // move the mouseJointNode to the touch position
-        _mouseJointNode.position = touchLocatin;
+        _mouseJointNode.position = touchLocation;
 
             // setup a spring joint between the mouseJointNode and the catapultArm
         _mouseJoint = [CCPhysicsJoint connectedSpringJointWithBodyA:_mouseJointNode.physicsBody bodyB:_catapultArm.physicsBody anchorA:ccp(0, 0) anchorB:ccp(34, 138) restLength:0.f stiffness:3000.f damping:150.f];
     }
-
 }
 
 
@@ -71,7 +69,6 @@ _physicsNode.debugDraw = TRUE;
         [_mouseJoint invalidate];
         _mouseJoint = nil;
 
-        [self launchPenguin];
     }
 }
 -(void) touchEnded:(UITouch *)touch withEvent:(UIEvent *)event
