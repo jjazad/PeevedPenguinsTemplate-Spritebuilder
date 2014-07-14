@@ -192,6 +192,22 @@
 				</dict>
 				<dict>
 					<key>name</key>
+					<string>bodyA</string>
+					<key>type</key>
+					<string>NodeReference</string>
+					<key>value</key>
+					<integer>5</integer>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>bodyB</string>
+					<key>type</key>
+					<string>NodeReference</string>
+					<key>value</key>
+					<integer>4</integer>
+				</dict>
+				<dict>
+					<key>name</key>
 					<string>collideBodies</string>
 					<key>type</key>
 					<string>Check</string>
@@ -205,8 +221,8 @@
 					<string>Point</string>
 					<key>value</key>
 					<array>
-						<real>0.0</real>
-						<real>0.0</real>
+						<real>139.23202514648438</real>
+						<real>5.9751014709472656</real>
 					</array>
 				</dict>
 				<dict>
@@ -300,8 +316,8 @@
 					<string>Position</string>
 					<key>value</key>
 					<array>
-						<real>202</real>
-						<real>235</real>
+						<real>112.78408050537109</real>
+						<real>206.61018371582031</real>
 						<integer>0</integer>
 						<integer>0</integer>
 						<integer>0</integer>
@@ -314,6 +330,14 @@
 					<string>NodeReference</string>
 					<key>value</key>
 					<integer>31</integer>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>bodyB</string>
+					<key>type</key>
+					<string>NodeReference</string>
+					<key>value</key>
+					<integer>5</integer>
 				</dict>
 				<dict>
 					<key>name</key>
@@ -330,8 +354,8 @@
 					<string>Point</string>
 					<key>value</key>
 					<array>
-						<real>51</real>
-						<real>28</real>
+						<real>-43</real>
+						<real>15</real>
 					</array>
 				</dict>
 				<dict>
@@ -341,8 +365,8 @@
 					<string>Point</string>
 					<key>value</key>
 					<array>
-						<real>177.07037353515625</real>
-						<real>135.5986328125</real>
+						<real>180.60591125488281</real>
+						<real>129.47491455078125</real>
 					</array>
 				</dict>
 				<dict>
@@ -374,7 +398,7 @@
 					<string>EnabledFloat</string>
 					<key>value</key>
 					<array>
-						<real>58</real>
+						<real>114.06713104248047</real>
 						<false/>
 					</array>
 				</dict>
@@ -395,6 +419,8 @@
 					<real>4</real>
 				</dict>
 			</array>
+			<key>selected</key>
+			<true/>
 		</dict>
 	</array>
 	<key>jsControlled</key>
@@ -1268,8 +1294,8 @@
 										<string>Position</string>
 										<key>value</key>
 										<array>
-											<real>151</real>
-											<real>207</real>
+											<real>80</real>
+											<real>175</real>
 											<integer>0</integer>
 											<integer>0</integer>
 											<integer>0</integer>
@@ -1311,6 +1337,14 @@
 											<false/>
 											<integer>0</integer>
 										</array>
+									</dict>
+									<dict>
+										<key>name</key>
+										<string>rotation</string>
+										<key>type</key>
+										<string>Degrees</string>
+										<key>value</key>
+										<real>116.81370544433594</real>
 									</dict>
 								</array>
 							</dict>
@@ -1425,8 +1459,6 @@
 										</array>
 									</dict>
 								</array>
-								<key>selected</key>
-								<true/>
 							</dict>
 						</array>
 						<key>customClass</key>
