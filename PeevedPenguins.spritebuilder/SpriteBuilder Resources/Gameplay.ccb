@@ -1068,7 +1068,7 @@
 								<key>displayName</key>
 								<string>CCNodeMouseJoint</string>
 								<key>memberVarAssignmentName</key>
-								<string>_mouseJointNode </string>
+								<string>_mouseJointNode</string>
 								<key>memberVarAssignmentType</key>
 								<integer>1</integer>
 								<key>physicsBody</key>
@@ -1167,6 +1167,8 @@
 										</array>
 									</dict>
 								</array>
+								<key>selected</key>
+								<true/>
 							</dict>
 						</array>
 						<key>customClass</key>
