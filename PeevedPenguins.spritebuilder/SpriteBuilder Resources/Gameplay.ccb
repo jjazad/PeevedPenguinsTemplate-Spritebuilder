@@ -55,8 +55,8 @@
 					<string>Position</string>
 					<key>value</key>
 					<array>
-						<real>179.99996948242188</real>
-						<real>299</real>
+						<real>233.99996948242188</real>
+						<real>291</real>
 						<integer>0</integer>
 						<integer>0</integer>
 						<integer>0</integer>
@@ -93,8 +93,8 @@
 					<string>Point</string>
 					<key>value</key>
 					<array>
-						<real>0.0</real>
-						<real>14</real>
+						<real>58</real>
+						<real>-95</real>
 					</array>
 				</dict>
 				<dict>
@@ -104,8 +104,8 @@
 					<string>Point</string>
 					<key>value</key>
 					<array>
-						<real>14</real>
-						<real>150</real>
+						<real>202.22160339355469</real>
+						<real>159.91766357421875</real>
 					</array>
 				</dict>
 				<dict>
@@ -291,8 +291,6 @@
 					<integer>1</integer>
 				</dict>
 			</array>
-			<key>selected</key>
-			<true/>
 		</dict>
 		<dict>
 			<key>UUID</key>
@@ -318,8 +316,8 @@
 					<string>Position</string>
 					<key>value</key>
 					<array>
-						<real>112</real>
-						<real>174</real>
+						<real>202</real>
+						<real>235</real>
 						<integer>0</integer>
 						<integer>0</integer>
 						<integer>0</integer>
@@ -400,7 +398,7 @@
 					<string>EnabledFloat</string>
 					<key>value</key>
 					<array>
-						<real>125.39936828613281</real>
+						<real>17.088010787963867</real>
 						<false/>
 					</array>
 				</dict>
@@ -1294,8 +1292,8 @@
 										<string>Position</string>
 										<key>value</key>
 										<array>
-											<real>179.99996948242188</real>
-											<real>285</real>
+											<real>175.99996948242188</real>
+											<real>386</real>
 											<integer>0</integer>
 											<integer>0</integer>
 											<integer>0</integer>
@@ -1339,6 +1337,8 @@
 										</array>
 									</dict>
 								</array>
+								<key>selected</key>
+								<true/>
 							</dict>
 							<dict>
 								<key>UUID</key>
@@ -1406,8 +1406,8 @@
 										<string>Position</string>
 										<key>value</key>
 										<array>
-											<real>61</real>
-											<real>146</real>
+											<real>151</real>
+											<real>207</real>
 											<integer>0</integer>
 											<integer>0</integer>
 											<integer>0</integer>
