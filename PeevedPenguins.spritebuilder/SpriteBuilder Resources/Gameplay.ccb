@@ -454,7 +454,7 @@
 								<key>displayName</key>
 								<string>catapultarm</string>
 								<key>memberVarAssignmentName</key>
-								<string></string>
+								<string>_catapultarm</string>
 								<key>memberVarAssignmentType</key>
 								<integer>1</integer>
 								<key>physicsBody</key>
@@ -611,6 +611,8 @@
 										</array>
 									</dict>
 								</array>
+								<key>selected</key>
+								<true/>
 							</dict>
 							<dict>
 								<key>UUID</key>
@@ -1258,8 +1260,6 @@
 								<real>0.5</real>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 					</dict>
 				</array>
 				<key>customClass</key>
