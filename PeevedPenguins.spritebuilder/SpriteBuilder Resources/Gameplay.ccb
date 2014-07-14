@@ -137,7 +137,7 @@
 					<string>EnabledFloat</string>
 					<key>value</key>
 					<array>
-						<real>87.321243286132812</real>
+						<real>45.582973480224609</real>
 						<false/>
 					</array>
 				</dict>
@@ -196,7 +196,7 @@
 					<key>type</key>
 					<string>NodeReference</string>
 					<key>value</key>
-					<integer>5</integer>
+					<integer>4</integer>
 				</dict>
 				<dict>
 					<key>name</key>
@@ -204,7 +204,7 @@
 					<key>type</key>
 					<string>NodeReference</string>
 					<key>value</key>
-					<integer>4</integer>
+					<integer>5</integer>
 				</dict>
 				<dict>
 					<key>name</key>
@@ -221,8 +221,8 @@
 					<string>Point</string>
 					<key>value</key>
 					<array>
-						<real>139.23202514648438</real>
-						<real>5.9751014709472656</real>
+						<real>177</real>
+						<real>57</real>
 					</array>
 				</dict>
 				<dict>
@@ -249,11 +249,35 @@
 				</dict>
 				<dict>
 					<key>name</key>
+					<string>dampedSpringEnabled</string>
+					<key>type</key>
+					<string>Check</string>
+					<key>value</key>
+					<true/>
+				</dict>
+				<dict>
+					<key>name</key>
 					<string>dampedSpringStiffness</string>
 					<key>type</key>
 					<string>Float</string>
 					<key>value</key>
 					<real>4</real>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>limitEnabled</string>
+					<key>type</key>
+					<string>Check</string>
+					<key>value</key>
+					<true/>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>motorEnabled</string>
+					<key>type</key>
+					<string>Check</string>
+					<key>value</key>
+					<true/>
 				</dict>
 				<dict>
 					<key>name</key>
@@ -265,6 +289,14 @@
 						<real>100</real>
 						<false/>
 					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>layoutType</string>
+					<key>type</key>
+					<string>Byte</string>
+					<key>value</key>
+					<integer>1</integer>
 				</dict>
 			</array>
 			<key>selected</key>
