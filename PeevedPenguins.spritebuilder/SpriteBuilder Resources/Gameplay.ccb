@@ -1084,7 +1084,7 @@
 								<key>displayName</key>
 								<string>CCNodePullBack</string>
 								<key>memberVarAssignmentName</key>
-								<string>_pullBack</string>
+								<string>_pullback</string>
 								<key>memberVarAssignmentType</key>
 								<integer>1</integer>
 								<key>physicsBody</key>
