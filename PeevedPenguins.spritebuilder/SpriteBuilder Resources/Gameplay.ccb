@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>31</integer>
+	<integer>33</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -55,8 +55,8 @@
 					<string>Position</string>
 					<key>value</key>
 					<array>
-						<real>222.31640625</real>
-						<real>297.50390625</real>
+						<real>179.99996948242188</real>
+						<real>299</real>
 						<integer>0</integer>
 						<integer>0</integer>
 						<integer>0</integer>
@@ -93,8 +93,8 @@
 					<string>Point</string>
 					<key>value</key>
 					<array>
-						<real>52.316436767578125</real>
-						<real>18.50390625</real>
+						<real>0.0</real>
+						<real>14</real>
 					</array>
 				</dict>
 				<dict>
@@ -104,8 +104,8 @@
 					<string>Point</string>
 					<key>value</key>
 					<array>
-						<real>186.67886352539062</real>
-						<real>144.41207885742188</real>
+						<real>14</real>
+						<real>150</real>
 					</array>
 				</dict>
 				<dict>
@@ -137,7 +137,7 @@
 					<string>EnabledFloat</string>
 					<key>value</key>
 					<array>
-						<real>45.582973480224609</real>
+						<real>50</real>
 						<true/>
 					</array>
 				</dict>
@@ -147,7 +147,7 @@
 					<key>type</key>
 					<string>Float</string>
 					<key>value</key>
-					<real>1</real>
+					<real>60</real>
 				</dict>
 				<dict>
 					<key>name</key>
@@ -155,9 +155,11 @@
 					<key>type</key>
 					<string>Float</string>
 					<key>value</key>
-					<real>4</real>
+					<real>500</real>
 				</dict>
 			</array>
+			<key>selected</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>UUID</key>
@@ -192,22 +194,6 @@
 				</dict>
 				<dict>
 					<key>name</key>
-					<string>bodyA</string>
-					<key>type</key>
-					<string>NodeReference</string>
-					<key>value</key>
-					<integer>4</integer>
-				</dict>
-				<dict>
-					<key>name</key>
-					<string>bodyB</string>
-					<key>type</key>
-					<string>NodeReference</string>
-					<key>value</key>
-					<integer>5</integer>
-				</dict>
-				<dict>
-					<key>name</key>
 					<string>collideBodies</string>
 					<key>type</key>
 					<string>Check</string>
@@ -221,8 +207,8 @@
 					<string>Point</string>
 					<key>value</key>
 					<array>
-						<real>177</real>
-						<real>57</real>
+						<real>0.0</real>
+						<real>0.0</real>
 					</array>
 				</dict>
 				<dict>
@@ -307,8 +293,134 @@
 					<integer>1</integer>
 				</dict>
 			</array>
-			<key>selected</key>
-			<true/>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<integer>32</integer>
+			<key>baseClass</key>
+			<string>CCPhysicsSpringJoint</string>
+			<key>children</key>
+			<array/>
+			<key>customClass</key>
+			<string></string>
+			<key>displayName</key>
+			<string>CCPhysicsSpringJoint</string>
+			<key>memberVarAssignmentName</key>
+			<string></string>
+			<key>memberVarAssignmentType</key>
+			<integer>1</integer>
+			<key>properties</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>position</string>
+					<key>type</key>
+					<string>Position</string>
+					<key>value</key>
+					<array>
+						<real>112</real>
+						<real>174</real>
+						<integer>0</integer>
+						<integer>0</integer>
+						<integer>0</integer>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>bodyA</string>
+					<key>type</key>
+					<string>NodeReference</string>
+					<key>value</key>
+					<integer>31</integer>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>bodyB</string>
+					<key>type</key>
+					<string>NodeReference</string>
+					<key>value</key>
+					<integer>5</integer>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>collideBodies</string>
+					<key>type</key>
+					<string>Check</string>
+					<key>value</key>
+					<false/>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>anchorA</string>
+					<key>type</key>
+					<string>Point</string>
+					<key>value</key>
+					<array>
+						<real>51</real>
+						<real>28</real>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>anchorB</string>
+					<key>type</key>
+					<string>Point</string>
+					<key>value</key>
+					<array>
+						<real>177.07037353515625</real>
+						<real>135.5986328125</real>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>breakingForce</string>
+					<key>type</key>
+					<string>FloatCheck</string>
+					<key>value</key>
+					<array>
+						<real>100</real>
+						<false/>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>maxForce</string>
+					<key>type</key>
+					<string>FloatCheck</string>
+					<key>value</key>
+					<array>
+						<real>100</real>
+						<false/>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>restLength</string>
+					<key>type</key>
+					<string>EnabledFloat</string>
+					<key>value</key>
+					<array>
+						<real>125.39936065673828</real>
+						<false/>
+					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>damping</string>
+					<key>type</key>
+					<string>Float</string>
+					<key>value</key>
+					<real>1</real>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>stiffness</string>
+					<key>type</key>
+					<string>Float</string>
+					<key>value</key>
+					<real>4</real>
+				</dict>
+			</array>
 		</dict>
 	</array>
 	<key>jsControlled</key>
@@ -1128,7 +1240,7 @@
 								<key>displayName</key>
 								<string>CCNodeTop</string>
 								<key>memberVarAssignmentName</key>
-								<string></string>
+								<string>_pullbackNode</string>
 								<key>memberVarAssignmentType</key>
 								<integer>1</integer>
 								<key>physicsBody</key>
@@ -1147,6 +1259,118 @@
 									<string></string>
 									<key>cornerRadius</key>
 									<real>0.0</real>
+									<key>density</key>
+									<real>1</real>
+									<key>dynamic</key>
+									<false/>
+									<key>elasticity</key>
+									<real>0.30000001192092896</real>
+									<key>friction</key>
+									<real>0.30000001192092896</real>
+									<key>points</key>
+									<array>
+										<array>
+											<real>-13.960906982421875</real>
+											<real>9.0390625</real>
+										</array>
+									</array>
+									<key>polygons</key>
+									<array/>
+								</dict>
+								<key>properties</key>
+								<array>
+									<dict>
+										<key>name</key>
+										<string>name</string>
+										<key>type</key>
+										<string>StringSimple</string>
+										<key>value</key>
+										<string></string>
+									</dict>
+									<dict>
+										<key>name</key>
+										<string>position</string>
+										<key>type</key>
+										<string>Position</string>
+										<key>value</key>
+										<array>
+											<real>179.99996948242188</real>
+											<real>285</real>
+											<integer>0</integer>
+											<integer>0</integer>
+											<integer>0</integer>
+										</array>
+									</dict>
+									<dict>
+										<key>name</key>
+										<string>contentSize</string>
+										<key>type</key>
+										<string>Size</string>
+										<key>value</key>
+										<array>
+											<real>0.0</real>
+											<real>0.0</real>
+											<integer>0</integer>
+											<integer>0</integer>
+										</array>
+									</dict>
+									<dict>
+										<key>name</key>
+										<string>anchorPoint</string>
+										<key>type</key>
+										<string>Point</string>
+										<key>value</key>
+										<array>
+											<real>0.0</real>
+											<real>0.0</real>
+										</array>
+									</dict>
+									<dict>
+										<key>name</key>
+										<string>scale</string>
+										<key>type</key>
+										<string>ScaleLock</string>
+										<key>value</key>
+										<array>
+											<real>1</real>
+											<real>1</real>
+											<false/>
+											<integer>0</integer>
+										</array>
+									</dict>
+								</array>
+							</dict>
+							<dict>
+								<key>UUID</key>
+								<integer>31</integer>
+								<key>baseClass</key>
+								<string>CCNode</string>
+								<key>children</key>
+								<array/>
+								<key>customClass</key>
+								<string></string>
+								<key>displayName</key>
+								<string>CCNodeMouseJoint</string>
+								<key>memberVarAssignmentName</key>
+								<string>_mouseJointNode</string>
+								<key>memberVarAssignmentType</key>
+								<integer>1</integer>
+								<key>physicsBody</key>
+								<dict>
+									<key>affectedByGravity</key>
+									<true/>
+									<key>allowsRotation</key>
+									<true/>
+									<key>bodyShape</key>
+									<integer>1</integer>
+									<key>collisionCategories</key>
+									<array/>
+									<key>collisionMask</key>
+									<array/>
+									<key>collisionType</key>
+									<string></string>
+									<key>cornerRadius</key>
+									<real>16</real>
 									<key>density</key>
 									<real>1</real>
 									<key>dynamic</key>
@@ -1182,8 +1406,8 @@
 										<string>Position</string>
 										<key>value</key>
 										<array>
-											<real>169.99996948242188</real>
-											<real>279</real>
+											<real>61</real>
+											<real>146</real>
 											<integer>0</integer>
 											<integer>0</integer>
 											<integer>0</integer>
