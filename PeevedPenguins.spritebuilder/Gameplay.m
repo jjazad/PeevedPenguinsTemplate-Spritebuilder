@@ -16,7 +16,7 @@
 
     CCNode *_levelNode;
     CCNode *_contentNode;
-    CCNode *_pullbackNode;
+    CCNode *_pullback;
     CCNode *_mouseJointNode;
     CCPhysicsJoint *_mouseJoint;
 }
@@ -29,15 +29,13 @@
         // tell this scene to accept touches
     self.userInteractionEnabled = TRUE;
 
-    _physicsNode.debugDraw = TRUE;
-
     CCScene *level = [CCBReader loadAsScene:@"Levels/Level1"];
     [_levelNode addChild:level];
 
         // nothing shall collide with our invisible nodes
-    _pullbackNode.physicsBody.collisionMask = @[];
+    _pullback.physicsBody.collisionMask = @[];
     _mouseJointNode.physicsBody.collisionMask = @[];
-
+_physicsNode.debugDraw = TRUE;
 }
 
     // called on every touch in this scene
