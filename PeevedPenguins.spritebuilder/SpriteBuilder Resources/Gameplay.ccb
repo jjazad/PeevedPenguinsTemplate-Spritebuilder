@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>45</integer>
+	<integer>46</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -1058,7 +1058,7 @@
 							</dict>
 							<dict>
 								<key>UUID</key>
-								<integer>40</integer>
+								<integer>45</integer>
 								<key>baseClass</key>
 								<string>CCNode</string>
 								<key>children</key>
@@ -1074,9 +1074,9 @@
 								<key>physicsBody</key>
 								<dict>
 									<key>affectedByGravity</key>
-									<false/>
+									<true/>
 									<key>allowsRotation</key>
-									<false/>
+									<true/>
 									<key>bodyShape</key>
 									<integer>1</integer>
 									<key>collisionCategories</key>
@@ -1098,8 +1098,8 @@
 									<key>points</key>
 									<array>
 										<array>
-											<real>18.859375</real>
-											<real>-10.80859375</real>
+											<real>0.0</real>
+											<real>0.0</real>
 										</array>
 									</array>
 									<key>polygons</key>
@@ -1122,8 +1122,8 @@
 										<string>Position</string>
 										<key>value</key>
 										<array>
-											<real>128</real>
-											<real>155</real>
+											<real>0.0</real>
+											<real>0.0</real>
 											<integer>0</integer>
 											<integer>0</integer>
 											<integer>0</integer>
@@ -1167,6 +1167,8 @@
 										</array>
 									</dict>
 								</array>
+								<key>selected</key>
+								<true/>
 							</dict>
 						</array>
 						<key>customClass</key>
@@ -1258,8 +1260,6 @@
 								<real>0.5</real>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 					</dict>
 				</array>
 				<key>customClass</key>

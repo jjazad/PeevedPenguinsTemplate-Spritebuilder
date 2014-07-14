@@ -39,6 +39,7 @@ _physicsNode.debugDraw = TRUE;
 }
 
     // called on every touch in this scene
+
 - (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
 
          CGPoint touchLocation = [touch locationInNode:_contentNode];
