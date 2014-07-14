@@ -158,8 +158,6 @@
 					<real>500</real>
 				</dict>
 			</array>
-			<key>selected</key>
-			<true/>
 		</dict>
 		<dict>
 			<key>UUID</key>
@@ -194,6 +192,22 @@
 				</dict>
 				<dict>
 					<key>name</key>
+					<string>bodyA</string>
+					<key>type</key>
+					<string>NodeReference</string>
+					<key>value</key>
+					<integer>5</integer>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>bodyB</string>
+					<key>type</key>
+					<string>NodeReference</string>
+					<key>value</key>
+					<integer>4</integer>
+				</dict>
+				<dict>
+					<key>name</key>
 					<string>collideBodies</string>
 					<key>type</key>
 					<string>Check</string>
@@ -207,8 +221,8 @@
 					<string>Point</string>
 					<key>value</key>
 					<array>
-						<real>0.0</real>
-						<real>0.0</real>
+						<real>139.23202514648438</real>
+						<real>5.9751014709472656</real>
 					</array>
 				</dict>
 				<dict>
@@ -235,14 +249,6 @@
 				</dict>
 				<dict>
 					<key>name</key>
-					<string>dampedSpringEnabled</string>
-					<key>type</key>
-					<string>Check</string>
-					<key>value</key>
-					<true/>
-				</dict>
-				<dict>
-					<key>name</key>
 					<string>dampedSpringRestAngle</string>
 					<key>type</key>
 					<string>Degrees</string>
@@ -256,14 +262,6 @@
 					<string>Float</string>
 					<key>value</key>
 					<real>4</real>
-				</dict>
-				<dict>
-					<key>name</key>
-					<string>limitEnabled</string>
-					<key>type</key>
-					<string>Check</string>
-					<key>value</key>
-					<true/>
 				</dict>
 				<dict>
 					<key>name</key>
@@ -293,6 +291,8 @@
 					<integer>1</integer>
 				</dict>
 			</array>
+			<key>selected</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>UUID</key>
@@ -400,7 +400,7 @@
 					<string>EnabledFloat</string>
 					<key>value</key>
 					<array>
-						<real>125.39936065673828</real>
+						<real>125.39936828613281</real>
 						<false/>
 					</array>
 				</dict>
