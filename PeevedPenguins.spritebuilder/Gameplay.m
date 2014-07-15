@@ -86,6 +86,12 @@
     }
 }
 
+
+-(void) touchEnded:(UITouch *)touch withEvent:(UIEvent *)event
+{
+        // when touches end, meaning the user releases their finger, release the catapult
+    [self releaseCatapult];
+}
 /*
 
 - (void)releaseCatapult {
