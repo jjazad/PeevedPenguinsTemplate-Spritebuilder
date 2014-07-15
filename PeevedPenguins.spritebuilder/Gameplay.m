@@ -30,17 +30,22 @@
 
     // is called when CCB file has completed loading
 - (void)didLoadFromCCB {
+
+    _physicsNode.debugDraw = TRUE;
+
+    
         // tell this scene to accept touches
     self.userInteractionEnabled = TRUE;
-
-        //  CCScene *level = [CCBReader loadAsScene:@"Levels/Level1"];
-        // [_levelNode addChild:level];
 
         // nothing shall collide with our invisible nodes
 
     _pullback.physicsBody.collisionMask = @[];
         //  _mouseJointNode.physicsBody.collisionMask = @[];
-          _physicsNode.debugDraw = TRUE;
+
+
+
+    CCScene *level = [CCBReader loadAsScene:@"Levels/Level1"];
+    [_levelNode addChild:level];
 }
 
     // called on every touch in this scene
