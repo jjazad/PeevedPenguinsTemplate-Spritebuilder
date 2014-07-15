@@ -62,9 +62,25 @@
 
             // setup a spring joint between the mouseJointNode and the catapultArm
         _mouseJoint = [CCPhysicsJoint connectedSpringJointWithBodyA:_mouseJointNode.physicsBody bodyB:_catapultArm.physicsBody anchorA:ccp(0, 0) anchorB:ccp(34, 138) restLength:0.f stiffness:3000.f damping:150.f];
+
+
+
+            // create a penguin from the ccb-file
+        _currentPenguin = [CCBReader load:@"Penguin"];
+            // initially position it on the scoop. 34,138 is the position in the node space of the _catapultArm
+        CGPoint penguinPosition = [_catapultArm convertToWorldSpace:ccp(34, 138)];
+            // transform the world position to the node space to which the penguin will be added (_physicsNode)
+        _currentPenguin.position = [_physicsNode convertToNodeSpace:penguinPosition];
+            // add it to the physics world
+        [_physicsNode addChild:_currentPenguin];
+            // we don't want the penguin to rotate in the scoop
+        _currentPenguin.physicsBody.allowsRotation = FALSE;
+
+            // create a joint to keep the penguin fixed to the scoop until the catapult is released
+        _penguinCatapultJoint = [CCPhysicsJoint connectedPivotJointWithBodyA:_currentPenguin.physicsBody bodyB:_catapultArm.physicsBody anchorA:_currentPenguin.anchorPointInPoints];
     }
 
-        // [self launchPenguin];
+
 
 }
 
@@ -76,23 +92,6 @@
     _mouseJointNode.position = touchLocation;
 }
 
-
-- (void)releaseCatapult {
-    if (_mouseJoint != nil)
-    {
-            // releases the joint and lets the catapult snap back
-        [_mouseJoint invalidate];
-        _mouseJoint = nil;
-    }
-}
-
-
--(void) touchEnded:(UITouch *)touch withEvent:(UIEvent *)event
-{
-        // when touches end, meaning the user releases their finger, release the catapult
-    [self releaseCatapult];
-}
-/*
 
 - (void)releaseCatapult {
     if (_mouseJoint != nil)
@@ -112,21 +111,22 @@
             // follow the flying penguin
         CCActionFollow *follow = [CCActionFollow actionWithTarget:_currentPenguin worldBoundary:self.boundingBox];
         [_contentNode runAction:follow];
-
     }
 }
+
+
 -(void) touchEnded:(UITouch *)touch withEvent:(UIEvent *)event
 {
         // when touches end, meaning the user releases their finger, release the catapult
     [self releaseCatapult];
 }
 
+
 -(void) touchCancelled:(UITouch *)touch withEvent:(UIEvent *)event
 {
         // when touches are cancelled, meaning the user drags their finger off the screen or onto something else, release the catapult
     [self releaseCatapult];
 }
-*/
 
 
 - (void)launchPenguin {
