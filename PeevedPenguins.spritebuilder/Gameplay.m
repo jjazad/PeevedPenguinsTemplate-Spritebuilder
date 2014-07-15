@@ -39,7 +39,7 @@
         // nothing shall collide with our invisible nodes
 
     _pullback.physicsBody.collisionMask = @[];
-    _mouseJointNode.physicsBody.collisionMask = @[];
+        //  _mouseJointNode.physicsBody.collisionMask = @[];
           _physicsNode.debugDraw = TRUE;
 }
 
@@ -66,6 +66,8 @@
     }
 }
 
+
+/*
 - (void)touchMoved:(UITouch *)touch withEvent:(UIEvent *)event
 {
         // whenever touches move, update the position of the mouseJointNode to the touch position
@@ -126,7 +128,7 @@
     [_contentNode runAction:follow];
 
 }
-
+*/
 
 -(void) retry {
 
