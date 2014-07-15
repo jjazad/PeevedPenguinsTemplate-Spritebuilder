@@ -10,15 +10,11 @@
 
 @implementation Seal
 
-/*
-- (id)init {
-    self = [super init];
+-(void) didLoadFromCCB {
 
-    if (self) {
-        CCLOG(@"Seal created");
-    }
 
-    return self;
+    self.physicsBody.collisionType = @"seal";
 }
-*/
+
+
 @end
