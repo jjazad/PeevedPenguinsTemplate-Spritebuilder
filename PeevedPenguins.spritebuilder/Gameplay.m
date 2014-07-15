@@ -33,8 +33,8 @@
         // tell this scene to accept touches
     self.userInteractionEnabled = TRUE;
 
-    CCScene *level = [CCBReader loadAsScene:@"Levels/Level1"];
-    [_levelNode addChild:level];
+        //  CCScene *level = [CCBReader loadAsScene:@"Levels/Level1"];
+        // [_levelNode addChild:level];
 
         // nothing shall collide with our invisible nodes
 
@@ -55,13 +55,13 @@
     if (CGRectContainsPoint([_catapultArm boundingBox], touchLocation))
     {
 
-        NSLog(@"I am touching it");
-            // move the mouseJointNode to the touch position
+        NSLog(@"I am touching the MOUSE JOINT ");
+ /*           // move the mouseJointNode to the touch position
         _mouseJointNode.position = touchLocation;
 
             // setup a spring joint between the mouseJointNode and the catapultArm
         _mouseJoint = [CCPhysicsJoint connectedSpringJointWithBodyA:_mouseJointNode.physicsBody bodyB:_catapultArm.physicsBody anchorA:ccp(0, 0) anchorB:ccp(34, 138) restLength:0.f stiffness:3000.f damping:150.f];
-
+*/
 
     }
 }
