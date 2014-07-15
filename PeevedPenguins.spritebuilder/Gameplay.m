@@ -37,7 +37,7 @@
     [_levelNode addChild:level];
 
         // nothing shall collide with our invisible nodes
-    
+
     _pullback.physicsBody.collisionMask = @[];
     _mouseJointNode.physicsBody.collisionMask = @[];
           _physicsNode.debugDraw = TRUE;
