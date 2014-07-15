@@ -31,7 +31,7 @@
     // is called when CCB file has completed loading
 - (void)didLoadFromCCB {
 
-    _physicsNode.debugDraw = TRUE;
+        // _physicsNode.debugDraw = TRUE;
 
 
         // tell this scene to accept touches
