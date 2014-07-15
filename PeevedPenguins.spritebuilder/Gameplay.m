@@ -45,25 +45,10 @@
 
     // called on every touch in this scene
 
--(void) touchBegan:(UITouch *)touch withEvent:(UIEvent *)event
-{
-    CGPoint touchLocation = [touch locationInNode:_contentNode];
+-(void) touchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
 
+    [self launchPenguin];
 
-    NSLog(@"I am touching it");
-        // start catapult dragging when a touch inside of the catapult arm occurs
-    if (CGRectContainsPoint([_catapultArm boundingBox], touchLocation))
-    {
-
-        NSLog(@"I am touching the MOUSE JOINT ");
- /*           // move the mouseJointNode to the touch position
-        _mouseJointNode.position = touchLocation;
-
-            // setup a spring joint between the mouseJointNode and the catapultArm
-        _mouseJoint = [CCPhysicsJoint connectedSpringJointWithBodyA:_mouseJointNode.physicsBody bodyB:_catapultArm.physicsBody anchorA:ccp(0, 0) anchorB:ccp(34, 138) restLength:0.f stiffness:3000.f damping:150.f];
-*/
-
-    }
 }
 
 
@@ -107,7 +92,11 @@
         // when touches are cancelled, meaning the user drags their finger off the screen or onto something else, release the catapult
     [self releaseCatapult];
 }
+*/
+
+
 - (void)launchPenguin {
+
         // loads the Penguin.ccb we have set up in Spritebuilder
     CCNode* penguin = [CCBReader load:@"Penguin"];
         // position the penguin at the bowl of the catapult
@@ -116,19 +105,15 @@
         // add the penguin to the physicsNode of this scene (because it has physics enabled)
     [_physicsNode addChild:penguin];
 
-
         // manually create & apply a force to launch the penguin
     CGPoint launchDirection = ccp(1, 0);
     CGPoint force = ccpMult(launchDirection, 8000);
     [penguin.physicsBody applyForce:force];
 
-        // ensure followed object is in visible are when starting
-    self.position = ccp(0, 0);
-    CCActionFollow *follow = [CCActionFollow actionWithTarget:penguin worldBoundary:self.boundingBox];
-    [_contentNode runAction:follow];
-
 }
-*/
+
+
+
 
 -(void) retry {
 
