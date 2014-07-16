@@ -9,6 +9,7 @@
 #import "Gameplay.h"
 #import "Penguin.h"
 #import <CCPhysics+ObjectiveChipmunk.h>
+#import "WaitingPenguin.h"
 
 
 @implementation Gameplay {
