@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12C9D4A81976D52000989D28 /* WaitingPenguin.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C9D4A71976D52000989D28 /* WaitingPenguin.m */; };
 		12DF60D61973096D00D60029 /* Gameplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 12DF60D51973096D00D60029 /* Gameplay.m */; };
 		12DF60D919730BA600D60029 /* Seal.m in Sources */ = {isa = PBXBuildFile; fileRef = 12DF60D819730BA600D60029 /* Seal.m */; };
 		12DF60DC19730BB400D60029 /* Penguin.m in Sources */ = {isa = PBXBuildFile; fileRef = 12DF60DB19730BB400D60029 /* Penguin.m */; };
@@ -59,6 +60,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12C9D4A61976D52000989D28 /* WaitingPenguin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaitingPenguin.h; sourceTree = "<group>"; };
+		12C9D4A71976D52000989D28 /* WaitingPenguin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaitingPenguin.m; sourceTree = "<group>"; };
 		12DF60D41973096D00D60029 /* Gameplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gameplay.h; sourceTree = "<group>"; };
 		12DF60D51973096D00D60029 /* Gameplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gameplay.m; sourceTree = "<group>"; };
 		12DF60D719730BA600D60029 /* Seal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Seal.h; sourceTree = "<group>"; };
@@ -174,6 +177,8 @@
 		B77F1B2517B978D7009739AE = {
 			isa = PBXGroup;
 			children = (
+				12C9D4A61976D52000989D28 /* WaitingPenguin.h */,
+				12C9D4A71976D52000989D28 /* WaitingPenguin.m */,
 				12DF60D41973096D00D60029 /* Gameplay.h */,
 				12DF60D51973096D00D60029 /* Gameplay.m */,
 				12DF60D719730BA600D60029 /* Seal.h */,
@@ -357,6 +362,7 @@
 			files = (
 				12DF60DC19730BB400D60029 /* Penguin.m in Sources */,
 				12DF60D919730BA600D60029 /* Seal.m in Sources */,
+				12C9D4A81976D52000989D28 /* WaitingPenguin.m in Sources */,
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
 				12DF60D61973096D00D60029 /* Gameplay.m in Sources */,
 				B7378994180767190076A88C /* MainScene.m in Sources */,
