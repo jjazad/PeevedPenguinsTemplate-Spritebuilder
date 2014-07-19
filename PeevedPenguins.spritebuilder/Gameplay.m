@@ -90,7 +90,7 @@ static const float MIN_SPEED = 5.f;
     if (xMax > (self.boundingBox.origin.x + self.boundingBox.size.width)) {
         [self nextAttempt];
         return;
-    }
+      }
     }
 }
 
@@ -101,6 +101,10 @@ static const float MIN_SPEED = 5.f;
     CCActionMoveTo *actionMoveTo = [CCActionMoveTo actionWithDuration:1 position:ccp(0,0)];
     [_contentNode runAction:actionMoveTo]; 
 }
+
+
+
+
     // called on every touch in this scene
 
 -(void) touchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
@@ -147,6 +151,9 @@ static const float MIN_SPEED = 5.f;
 
 
 - (void)releaseCatapult {
+
+    _currentPenguin.launched = TRUE; 
+
     if (_mouseJoint != nil)
     {
             // releases the joint and lets the catapult snap back
