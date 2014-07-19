@@ -12,6 +12,8 @@
 #import "WaitingPenguin.h"
 
 
+static const float MIN_SPEED = 5.f;
+
 @implementation Gameplay {
 
     CCPhysicsNode *_physicsNode;
@@ -24,8 +26,9 @@
     CCPhysicsJoint *_mouseJoint;
 
 
-    CCNode *_currentPenguin;
+    Penguin *_currentPenguin;
     CCPhysicsJoint *_penguinCatapultJoint;
+    CCAction *_followPenguin;
 }
 
 
@@ -67,9 +70,37 @@
 */
 
 
+-(void)update:(CCTime)delta {
 
+    if (_currentPenguin.launched) {
 
+    if (ccpLength(_currentPenguin.physicsBody.velocity) < MIN_SPEED) {
+        [self nextAttempt];
+    }
 
+    int xMin = _currentPenguin.boundingBox.origin.x;
+
+    if (xMin < self.boundingBox.origin.x) {
+        [self nextAttempt];
+        return;
+    }
+
+    int xMax = xMin + _currentPenguin.boundingBox.size.width;
+
+    if (xMax > (self.boundingBox.origin.x + self.boundingBox.size.width)) {
+        [self nextAttempt];
+        return;
+    }
+    }
+}
+
+-(void)nextAttempt {
+    _currentPenguin = nil;
+    [_contentNode stopAction:_followPenguin];
+
+    CCActionMoveTo *actionMoveTo = [CCActionMoveTo actionWithDuration:1 position:ccp(0,0)];
+    [_contentNode runAction:actionMoveTo]; 
+}
     // called on every touch in this scene
 
 -(void) touchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
@@ -88,7 +119,7 @@
 
 
             // create a penguin from the ccb-file
-        _currentPenguin = [CCBReader load:@"Penguin"];
+        _currentPenguin = (Penguin*)[CCBReader load:@"Penguin"];
             // initially position it on the scoop. 34,138 is the position in the node space of the _catapultArm
         CGPoint penguinPosition = [_catapultArm convertToWorldSpace:ccp(34, 138)];
             // transform the world position to the node space to which the penguin will be added (_physicsNode)
@@ -131,8 +162,12 @@
         _currentPenguin.physicsBody.allowsRotation = TRUE;
 
             // follow the flying penguin
-        CCActionFollow *follow = [CCActionFollow actionWithTarget:_currentPenguin worldBoundary:self.boundingBox];
+      /*  CCActionFollow *follow = [CCActionFollow actionWithTarget:_currentPenguin worldBoundary:self.boundingBox];
         [_contentNode runAction:follow];
+       */
+
+        _followPenguin = [CCActionFollow actionWithTarget:_currentPenguin worldBoundary:self.boundingBox];
+        [_contentNode runAction:_followPenguin];
     }
 }
 
